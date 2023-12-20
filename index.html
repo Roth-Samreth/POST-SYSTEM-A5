@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RCR Mart</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="image/LOGO/Frame 2.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="left">
+        <div class="logo">
+          <a href="#"><img src="image/LOGO/Frame 3.png" alt="" /></a>
+        </div>
+      </div>
+      <section class="search-wrapper">
+        <div class="search">
+          <div class="fas fa-search"></div>
+        </div>
+  
+        <div class="searchInput">
+          <input type="text" placeholder="Search here" id="searchItems" />
+        </div>
+  
+        <div class="close">
+          <i class="fas fa-close"></i>
+        </div>
+      </section>
+      </div>
+      <div class="right">
+        <a href="pages/cart.html"><li><i class="material-icons">add_shopping_cart</i> Cart</li></a>
+        <a href="pages/admin.html">
+          <li id="admin"><i class="material-icons">account_box</i> Admin</li>
+        </a>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="form">
+        <form action="#">
+          <div class="title">
+            <h2>Add To Cart</h2>
+          </div>
+          <div class="pCustomer-id">
+            <label for="c-id">Customer Id</label>
+            <input
+              type="search"
+              name="pCustomer-id"
+              id="pCustomer-id"
+              min="3"
+              max="5"
+              placeholder="Customer Id"
+            />
+          </div>
+          <div class="p-name">
+            <label for="product-name">Product Name</label>
+            <input type="text" name="product-name" id="product-name" readonly />
+          </div>
+          <div class="p-category">
+            <label for="product-category">Product Category</label>
+            <input
+              type="text"
+              name="product-category"
+              id="product-category"
+              readonly
+            />
+          </div>
+          <div class="p-price">
+            <label for="product-price">Product Price</label>
+            <input type="number" id="product-price" readonly />
+          </div>
+          <div class="p-quantity">
+            <label for="product-quantity">Product Quantity</label>
+            <input
+              type="number"
+              name="product-quantity"
+              id="product-quantity"
+              required
+            />
+          </div>
+          <div class="manage">
+            <label for="btn-manange">Manage</label>
+            <div class="btn-manange">
+              <button class="add" type="submit" id="add">Add New</button>
+              <button>Cancel</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <main class="card-container"></main>
+      <!-- Category goes here -->
+      <div class="most-sell">
+        <button>All Category</button>
+      </div>
+    </div>
+    <script src="js/index/main.js" defer></script>
+  </body>
+</html>
