@@ -273,6 +273,7 @@ purchaseBtn.addEventListener("click", () => {
     customId.textContent = id;
     alert("Purchase Completed!!");
     generatePDF();
+    addRecord();
     // Remove all Items when clicked purchase
     for (let i = 0; i < cartItems.length; i++) {
       cartItems.splice(i);
